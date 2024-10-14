@@ -16,14 +16,15 @@ class _AppState extends State<App> {
   List<int> numbers = [];
 
   void onClicked() {
-    //setState(
-    //약간 swift 에서의 state 같은 느낌인데. .
-    () {
-      //  counter += 1;
-      numbers.add(numbers.length);
-    };
-    // )
+    setState(
+      //약간 swift 에서의 state 같은 느낌인데. .
+      () {
+        //  counter += 1;
+        numbers.add(numbers.length);
+      },
+    );
   }
+  //lifecycle
 
   @override
   Widget build(BuildContext context) {
